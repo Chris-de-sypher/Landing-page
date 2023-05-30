@@ -1,0 +1,1 @@
+# Landing page for absolute biginners 

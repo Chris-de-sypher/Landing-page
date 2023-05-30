@@ -1,0 +1,156 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* html parent element */
+html {
+  box-sizing: border-box;
+}
+/* using pseudo to set the universal selector to 0 */
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+    overflow: hidden;
+}
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+/* container */
+.container {
+  height: 100vh;
+  background: #0b0f8a;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  transition: 0.4s ease-in-out;
+  height: 8vh;
+}
+
+/* logo */
+.logo span {
+  font-size: 1em;
+  font-family: "Lobster", cursive;
+  color: #fff;
+}
+
+/* nav */
+nav ul .link {
+  display: inline-block;
+}
+
+/* nav ul li a */
+nav ul .link a {
+  padding: 0 13px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* pages */
+.drop {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 1.2em;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  background: red;
+  width: 120px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  border-radius: 6px;
+  line-height: 1.4;
+  left: 0;
+  top: 24px;
+  display: none;
+}
+
+.dropdown ul li a {
+  all: revert;
+  text-decoration: none;
+  color: black;
+}
+.dropdown ul li a:hover {
+  color: #ccc;
+  transition: 0.4s ease-in-out;
+}
+
+.drop:hover .dropdown {
+  display: flex;
+}
+
+.center{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg{
+    width: 800px;
+    height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.border{
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+    width: 350px;
+    height: 150px;
+    background: goldenrod;
+    transform: rotateZ(-40deg) translateX(115px);
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 20px auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.8em;
+}
+dl{
+    flex: 6;
+}
+dt{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #222;
+}
+dd{
+    line-height: 1.4;
+    color: #ccc;
+}
+.image{
+    flex: 2;
+}
+.image img{
+    width: 200px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
